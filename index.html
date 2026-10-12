@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitio Oficial - Combate Multijugador Táctico</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Barra de navegación con Menú Hamburguesa en móvil -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo-brand">
+        <img src="assets/Logo.jpg" alt="Logo" class="nav-avatar" />
+        <span class="logo-text">WO:<span>DEFINITIVE EDITION</span></span>
+      </a>
+
+      <!-- Botón de apertura para móviles -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menú de enlaces -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#features">Características</a></li>
+          <li><a href="#preview">Vista Previa</a></li>
+          <li><a href="privacy.html">Privacidad</a></li>
+          <li><a href="#download" class="btn-play-nav">JUGAR</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section con Banner nítido -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="banner-frame">
+        <img src="assets/Banner.png" alt="Banner Oficial" class="img-banner-main" />
+      </div>
+
+      <div class="hero-status-pill">
+        <span class="pulse-dot"></span> MATCHMAKING ONLINE • EOS & EAC ACTIVO
+      </div>
+
+      <h1 class="hero-heading">COMBATE POR TURNOS, FÍSICAS Y CAOS TOTAL</h1>
+      <p class="hero-subtext">
+        Elige tu mascota, personalízala con armas devastadoras y compite en partidas multijugador online de hasta 4 jugadores en salas simultáneas.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#download" class="btn-ui btn-yellow">DESCARGAR</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Modos & Características (Basado en tu menú) -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section-title">TODO LISTO PARA EL COMBATE</h2>
+      <p class="section-subtitle">Diseñado desde cero para partidas rápidas, justas y competitivas.</p>
+
+      <div class="game-cards-grid">
+        <div class="game-card">
+          <div class="card-icon-box">🎯</div>
+          <h3>Partidas Online 1 a 4 Jugadores</h3>
+          <p>Crea salas privadas con tus amigos o busca partida globalmente con el sistema de matchmaking integrado.</p>
+        </div>
+
+        <div class="game-card">
+          <div class="card-icon-box">🐶</div>
+          <h3>Tus Mascotas y Personalización</h3>
+          <p>Equipa tus mascotas con accesorios, desbloquea nuevas clases y personaliza su estilo para cada combate.</p>
+        </div>
+
+        <div class="game-card">
+          <div class="card-icon-box">🎯</div>
+          <h3>Modo Práctica</h3>
+          <p>Calibra tus ángulos, calcula la potencia de tiro y prueba las armas del arsenal sin presión de tiempo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vista Previa del Menú del Juego -->
+  <section id="preview" class="section section-lobby">
+    <div class="container text-center">
+      <h2 class="section-title">LOBBY & SALAS MULTIJUGADOR</h2>  
+      <div class="screenshot-wrapper">
+        <img src="assets/Menu.png" alt="Menú Principal del Juego" class="screenshot-img" />
+      </div>
+    </div>
+  </section>
+
+ <!-- Sección Multiplataforma de Descargas -->
+  <section id="download" class="section section-download">
+    <div class="container text-center">
+      <h2 class="section-title">ELIGE TU PLATAFORMA</h2>
+      <p class="section-subtitle">Juega donde quieras con cross-play y progresión unificada.</p>
+
+      <div class="platforms-grid">
+
+        <!-- 1. Epic Games Store -->
+        <div class="platform-card">
+          <div class="platform-badge badge-store">STORE</div>
+          <div class="platform-icon">⚡</div>
+          <h3>EPIC GAMES STORE</h3>
+          <p class="platform-meta">Versión oficial verificada</p>
+          <ul class="platform-features">
+            <li>Logros de Epic Games</li>
+            <li>Lista de amigos integrada</li>
+            <li>Sincronización en la nube</li>
+          </ul>
+          <a href="#" class="btn-ui btn-blue btn-block">PÁGINA EN EPIC</a>
+        </div>
+
+        <!-- 2. Steam -->
+        <div class="platform-card">
+          <div class="platform-badge badge-store">STORE</div>
+          <div class="platform-icon">🎮</div>
+          <h3>STEAM</h3>
+          <p class="platform-meta">PC & Steam Deck compatible</p>
+          <ul class="platform-features">
+            <li>Steam Cloud y Logros</li>
+            <li>Optimizado para Steam Deck</li>
+            <li>Comunidad y puntos de encuentro</li>
+          </ul>
+          <a href="#" class="btn-ui btn-blue btn-block">AÑADIR A WISHLIST</a>
+        </div>
+
+        <!-- 3. Android / Mobile -->
+        <div class="platform-card coming-soon">
+          <div class="platform-badge badge-soon">PRÓXIMAMENTE</div>
+          <div class="platform-icon">📱</div>
+          <h3>ANDROID / MOBILE</h3>
+          <p class="platform-meta">Google Play Store & APK</p>
+          <ul class="platform-features">
+            <li>Controles táctiles rediseñados</li>
+            <li>Cross-play completo con PC</li>
+            <li>Partidas rápidas en cualquier lugar</li>
+          </ul>
+          <button class="btn-ui btn-disabled btn-block" disabled>MUY PRONTO</button>
+        </div>
+
+        <!-- 4. macOS -->
+        <div class="platform-card coming-soon">
+          <div class="platform-badge badge-soon">PRÓXIMAMENTE</div>
+          <div class="platform-icon">🍎</div>
+          <h3>MACOS</h3>
+          <p class="platform-meta">Apple Silicon & Intel</p>
+          <ul class="platform-features">
+            <li>Optimizado para chips M1/M2/M3/M4</li>
+            <li>Soporte nativo Metal</li>
+            <li>Bajo consumo de batería</li>
+          </ul>
+          <button class="btn-ui btn-disabled btn-block" disabled>MUY PRONTO</button>
+        </div>
+
+        <!-- 5. PlayStation 5 (Nuevo) -->
+        <div class="platform-card coming-soon">
+          <div class="platform-badge badge-soon">PRÓXIMAMENTE</div>
+          <div class="platform-icon">🕹️</div>
+          <h3>PLAYSTATION 5</h3>
+          <p class="platform-meta">PlayStation Store</p>
+          <ul class="platform-features">
+            <li>Soporte háptico DualSense</li>
+            <li>Modo Rendimiento a 60/120 FPS</li>
+            <li>Cross-play y salas compartidas</li>
+          </ul>
+          <button class="btn-ui btn-disabled btn-block" disabled>MUY PRONTO</button>
+        </div>
+
+        <!-- 6. Xbox Series X|S (Nuevo) -->
+        <div class="platform-card coming-soon">
+          <div class="platform-badge badge-soon">PRÓXIMAMENTE</div>
+          <div class="platform-icon">🟢</div>
+          <h3>XBOX SERIES X|S</h3>
+          <p class="platform-meta">Microsoft Xbox Store</p>
+          <ul class="platform-features">
+            <li>Optimizado para Series X|S</li>
+            <li>Smart Delivery habilitado</li>
+            <li>Cross-play con comunidad de PC</li>
+          </ul>
+          <button class="btn-ui btn-disabled btn-block" disabled>MUY PRONTO</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Todos los derechos reservados. Proyecto independiente.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Política de Privacidad</a>
+        <a href="#download">Descargas</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
