@@ -284,19 +284,28 @@ body {
   }
 
   .nav-links {
-    flex-direction: column;
-    width: 100%;
-    padding: 20px 0;
-    gap: 16px;
-    text-align: center;
-  }
+      display: flex;
+      flex-direction: column;
+      align-items: center;      /* Centra horizontalmente los items */
+      justify-content: center;
+      width: 100%;
+      padding: 20px 0;
+      gap: 16px;
+      text-align: center;
+    }
+
+  .nav-links li {
+      width: 100%;
+      display: flex;
+      justify-content: center;  /* Centra el contenido de cada <li> */
+      align-items: center;
+    }
 
   .btn-play-nav {
-    display: inline-block;
-    margin-top: 6px;
-    width: 80%;
-    max-width: 220px;
-  }
+      display: inline-block;
+      margin: 6px auto 0 auto;  /* auto en los costados fuerza el centrado */
+      text-align: center;
+    }
 }
 
 /* Hero Section */
