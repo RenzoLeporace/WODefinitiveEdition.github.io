@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
   <link rel="icon" type="image/jpeg" href="Assets/Logo.jpg" />
-  <title>Legal: Privacidad y Términos de Servicio</title>
+  <title>Aviso Legal, Privacidad y Términos de Servicio</title>
   <link rel="stylesheet" href="Css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +12,11 @@
 </head>
 <body class="legal-page-body">
 
-  <!-- Navbar -->
   <header class="navbar">
     <div class="container nav-content">
       <a href="index.html" class="logo-brand">
         <img src="Assets/Logo.jpg" alt="Logo" class="nav-avatar" />
-        <span class="logo-text">WO:<span class="logo-text-desktop">DEFINITIVE EDITION</span><span
+        <span class="logo-text">WO:<span class="logo-text-desktop">DEFINITIVE EDITION</span><span class="logo-text-mobile">DE</span></span>
       </a>
       <nav class="nav-menu">
         <ul class="nav-links">
@@ -27,126 +26,135 @@
     </div>
   </header>
 
-  <!-- Contenedor Principal Legal -->
   <main class="container legal-wrapper">
     <div class="legal-header text-center">
-      <span class="legal-badge">CENTRO LEGAL Y DE CUMPLIMIENTO</span>
+      <span class="legal-badge">CENTRO DE CUMPLIMIENTO Y TRANSPARENCIA</span>
       <h1 class="legal-main-title">DOCUMENTACIÓN LEGAL</h1>
       <p class="legal-subtext">Última actualización: 12 de octubre de 2026</p>
 
-      <!-- Selector interactivo de documentos -->
       <div class="legal-tabs">
         <button class="tab-btn active" onclick="switchTab('privacy')">POLÍTICA DE PRIVACIDAD</button>
         <button class="tab-btn" onclick="switchTab('terms')">TÉRMINOS Y CONDICIONES</button>
       </div>
     </div>
 
-    <!-- DOCUMENTO 1: POLÍTICA DE PRIVACIDAD -->
+    <!-- PESTAÑA 1: POLÍTICA DE PRIVACIDAD -->
     <article id="tab-privacy" class="legal-doc-box tab-content active">
       <div class="doc-meta-banner">
-        <span>🔒 Cumplimiento para Epic Online Services (EOS) & Easy Anti-Cheat (EAC)</span>
+        <span>🔒 Cumplimiento normativo para Epic Online Services (EOS) y Easy Anti-Cheat (EAC)</span>
       </div>
 
       <section class="doc-section">
-        <h2>1. Identificación del Responsable</h2>
-        <p>El presente documento establece las condiciones de recopilación, almacenamiento y tratamiento de información derivadas del acceso, uso y ejecución del videojuego en adelante referido como "el Software", así como de su infraestructura de servidores y servicios asociados.</p>
+        <h2>1. Responsable del Tratamiento de Datos</h2>
+        <p>El responsable del tratamiento de los datos recabados en relación con el videojuego <strong>WO: Definitive Edition</strong> y sus servicios asociados es <strong>NOMBRE</strong>, desarrollador independiente radicado en la <strong>República Argentina</strong>.</p>
+        <p>Para cualquier comunicación oficial, ejercicio de derechos o consultas sobre esta política, puedes dirigirte al correo electrónico: <strong>MAIL</strong>.</p>
       </section>
 
       <section class="doc-section">
-        <h2>2. Información que Recopilamos</h2>
-        <p>No recopilamos información personal sensible (nombres reales, documentos de identidad ni domicilios personales). Únicamente se procesan identificadores técnicos y de red indispensables para el funcionamiento del multijugador y la seguridad de las salas:</p>
+        <h2>2. Datos Técnicos Recopilados</h2>
+        <p>No recopilamos información personal sensible como nombres reales, documentos de identidad, números telefónicos ni domicilios físicos. El tratamiento de datos se restringe exclusivamente a identificadores técnicos y funcionales necesarios para operar el multijugador:</p>
         <ul class="doc-list">
-          <li><strong>Identificadores de Plataforma y Cuenta:</strong> IDs alfanuméricos provistos por las plataformas distribuidoras (Epic Games Account ID, Steam ID u homólogos en consolas/móviles) para vincular perfiles, progreso, moneda virtual y estadísticas.</li>
-          <li><strong>Datos Técnicos de Red:</strong> Direcciones IP públicas, números de puerto asignados y métricas de latencia (ping) con el único fin de negociar conexiones de red peer-to-peer (P2P) o cliente-servidor para las partidas en línea.</li>
-          <li><strong>Telemetría de Rendimiento y Errores:</strong> Informes de fallos (crash dumps), arquitectura del sistema operativo, modelo de tarjeta gráfica y versiones de drivers para resolver errores de estabilidad.</li>
+          <li><strong>Identificadores de Cuenta y Plataforma:</strong> Tu Epic Product User ID (PUID) o Steam ID para permitir el inicio de sesión, guardar tu nivel, objetos desbloqueados y vincular tu progreso de juego.</li>
+          <li><strong>Datos de Red y Conectividad:</strong> Dirección IP pública y latencia de red (ping), procesados transitoriamente para permitir el emparejamiento y la comunicación de paquetes de datos entre salas de juego.</li>
+          <li><strong>Registros Técnicos de Error:</strong> Informes de fallos del cliente (crash logs) y especificaciones básicas de hardware con el único propósito de depurar errores de rendimiento y caídas del juego.</li>
         </ul>
       </section>
 
       <section class="doc-section">
-        <h2>3. Integración de Servicios de Terceros</h2>
-        <p>Para la infraestructura multijugador y la seguridad de los encuentros competitivos, el Software hace uso de servicios provistos por entidades externas:</p>
-        
+        <h2>3. Integraciones de Terceros: Epic Games</h2>
+        <p>El juego utiliza tecnologías proporcionadas por <strong>Epic Games, Inc.</strong>:</p>
         <div class="callout-box">
           <h3>Epic Online Services (EOS)</h3>
-          <p>Utilizamos el kit de desarrollo (SDK) de Epic Online Services, propiedad de Epic Games, Inc., para gestionar el emparejamiento (matchmaking), la autenticación de tickets de sesión, el sistema de presencia y la lista de amigos. Para más detalles, consulta la <a href="https://www.epicgames.com/site/es-ES/privacypolicy" target="_blank" rel="noopener">Política de Privacidad de Epic Games</a>.</p>
+          <p>Utilizado para gestionar la autenticación de usuarios, emparejamiento en salas competitivas (matchmaking) y estadísticas de partidas. Epic Games procesa estos datos conforme a su propia <a href="https://www.epicgames.com/site/es-ES/privacypolicy" target="_blank" rel="noopener">Política de Privacidad</a>.</p>
         </div>
-
         <div class="callout-box callout-security">
           <h3>Easy Anti-Cheat (EAC)</h3>
-          <p>Para garantizar una arena de juego libre de trampas y modificaciones ilícitas, el Software incluye la tecnología Easy Anti-Cheat (propiedad de Epic Games). Durante la ejecución del Software, Easy Anti-Cheat realiza análisis de integridad en los archivos del juego y supervisa la memoria del proceso del ejecutable para identificar software de terceros no autorizado, inyecciones de código o modificaciones ilegítimas de memoria. Este servicio no examina ni almacena archivos personales ajenos a la ejecución del juego.</p>
+          <p>Para evitar trampas, inyecciones de código y modificaciones indebidas de la memoria, el juego ejecuta Easy Anti-Cheat durante las partidas. EAC analiza exclusivamente la integridad de los archivos del juego y la memoria vinculada al proceso del ejecutable. No accede a archivos privados ni documentos personales ajenos al juego.</p>
         </div>
       </section>
 
       <section class="doc-section">
-        <h2>4. Conservación y Seguridad de los Datos</h2>
-        <p>Los datos técnicos de sesión se mantienen de forma transitoria durante la duración de la partida. Las estadísticas de progresión se conservan en servidores seguros asociados a las cuentas correspondientes. Implementamos cifrado estándar para salvaguardar la integridad de las comunicaciones y no vendemos, comercializamos ni cedemos información a redes de publicidad de terceros.</p>
+        <h2>4. Período de Conservación de Datos</h2>
+        <ul class="doc-list">
+          <li><strong>Datos de sesión y red (IP, latencia):</strong> Se procesan de forma efímera durante el transcurso de la partida y no se almacenan de manera persistente tras desconectarse del servidor o sala.</li>
+          <li><strong>Progreso y estadísticas del perfil:</strong> Se conservan únicamente mientras mantengas activa tu cuenta o hasta que solicites expresamente su supresión.</li>
+          <li><strong>Registros de fallos:</strong> Se eliminan en un plazo máximo de 90 días una vez resuelto el problema técnico.</li>
+        </ul>
       </section>
 
       <section class="doc-section">
-        <h2>5. Derechos del Usuario y Supresión de Datos</h2>
-        <p>De conformidad con las normativas internacionales de protección de datos (como el RGPD y la CCPA), cualquier usuario tiene derecho a solicitar el acceso, rectificación o eliminación total de los identificadores y estadísticas asociadas a su cuenta enviando una solicitud a nuestro canal de soporte.</p>
+        <h2>5. Protección de Menores de Edad</h2>
+        <p>Este videojuego no está dirigido a niños menores de 13 años (o la edad mínima legal en tu jurisdicción, como 16 años en determinados países del Espacio Económico Europeo). No recopilamos deliberadamente información personal identificable de menores de edad. Si un padre, madre o tutor legal toma conocimiento de que un menor a su cargo ha facilitado datos sin su consentimiento, puede solicitar la eliminación inmediata de dicha información contactándonos por correo electrónico.</p>
       </section>
 
-<section class="doc-section contact-card">
-        <h2>Canal Oficial de Contacto y Soporte</h2>
-        <p>Para consultas sobre privacidad, solicitudes de supresión de datos o reportes técnicos, ingresa a nuestro servidor oficial de Discord y abre un ticket en el canal de soporte:</p>
-        <!-- Reemplaza el '#' con tu enlace de invitación a Discord -->
-        <a href="https://discord.gg/Q3DEK8SKWU" target="_blank" rel="noopener" class="discord-btn">
-          <span class="discord-icon">💬</span> UNIRSE A DISCORD (TICKETS & SOPORTE)
+      <section class="doc-section">
+        <h2>6. Derechos del Usuario y Plazos de Supresión</h2>
+        <p>Tienes derecho a solicitar el acceso, rectificación o eliminación definitiva de los datos de progreso e identificadores asociados a tu cuenta. Una vez recibida y confirmada la solicitud por correo electrónico, <strong>procederemos a la eliminación total de los datos en un plazo máximo de 30 días naturales</strong>.</p>
+      </section>
+
+      <section class="doc-section contact-card">
+        <h2>Canales Oficiales de Contacto</h2>
+        <p>Para solicitudes de borrado de datos o consultas legales, escribe directamente a nuestro correo oficial:</p>
+        <div class="email-badge">MAIL</div>
+        <p style="margin-top: 15px; font-size: 0.85rem; color: var(--text-dim);">También puedes unirte a nuestra comunidad para seguimiento general o reportes comunitarios:</p>
+        <a href="https://discord.gg/TU_INVITACION" target="_blank" rel="noopener" class="discord-btn">
+          <span class="discord-icon">💬</span> COMUNIDAD OFICIAL EN DISCORD
         </a>
       </section>
     </article>
 
-    <!-- DOCUMENTO 2: TÉRMINOS Y CONDICIONES -->
+    <!-- PESTAÑA 2: TÉRMINOS Y CONDICIONES (EULA) -->
     <article id="tab-terms" class="legal-doc-box tab-content">
       <div class="doc-meta-banner banner-terms">
-        <span>⚖️ Contrato de Licencia de Usuario Final (EULA) y Normas de Uso</span>
+        <span>⚖️ Términos de Servicio y Contrato de Licencia de Usuario Final (EULA)</span>
       </div>
 
       <section class="doc-section">
-        <h2>1. Concesión de Licencia</h2>
-        <p>Al descargar, instalar o ejecutar el Software, se le otorga una licencia personal, limitada, revocable, no exclusiva y no transferible para su uso con fines de entretenimiento personal y no comercial.</p>
+        <h2>1. Aceptación de los Términos</h2>
+        <p>Al descargar, instalar o jugar a <strong>WO: Definitive Edition</strong>, aceptas quedar vinculado por estos Términos de Servicio. Si no estás de acuerdo con alguna de las condiciones, no debes instalar ni utilizar el software.</p>
       </section>
 
       <section class="doc-section">
-        <h2>2. Conducta del Jugador y Juego Limpio</h2>
-        <p>El Software es una experiencia competitiva. Al ingresar a cualquier partida pública o privada, el usuario se compromete a no incurrir en:</p>
+        <h2>2. Concesión de Licencia Limitada</h2>
+        <p>Se te otorga una licencia revocable, no exclusiva, intransferible y no sublicenciable para descargar y ejecutar el videojuego exclusivamente para fines de entretenimiento personal y no comercial en dispositivos compatibles autorizados.</p>
+      </section>
+
+      <section class="doc-section">
+        <h2>3. Reglas de Conducta y Juego Limpio (Anti-Cheat)</h2>
+        <p>Para proteger la comunidad y la integridad competitiva del juego, queda expresamente prohibido:</p>
         <ul class="doc-list">
-          <li><strong>Uso de Trampas o Exploits:</strong> Queda estrictamente prohibido el uso de bots, scripts de automatización, modificaciones de memoria, desensamblado o ingeniería inversa con el fin de obtener ventajas injustas.</li>
-          <li><strong>Alteración de Archivos:</strong> Modificar los ejecutables, paquetes de datos o bibliotecas DLL del juego o del sistema Easy Anti-Cheat resultará en la expulsión permanente de los servidores.</li>
-          <li><strong>Conducta Antideportiva:</strong> Acoso, colusión con adversarios para manipular el ranking o interrupción intencional del emparejamiento.</li>
+          <li><strong>Trampas y Alteraciones:</strong> Utilizar cheats, bots, scripts de puntería automatizada, herramientas de inyección en memoria, o alterar los paquetes de datos y archivos binarios del juego.</li>
+          <li><strong>Evasión de Seguridad:</strong> Intentar deshabilitar, bloquear, eludir o aplicar ingeniería inversa sobre los sistemas de <strong>Easy Anti-Cheat</strong> o <strong>Epic Online Services</strong>. El intento deliberado de evasión resultará en la suspensión permanente de acceso a los servidores en línea.</li>
+          <li><strong>Comportamiento Malicioso:</strong> Explotar deliberadamente fallos del juego (exploits) o atacar la infraestructura de red mediante saturación o denegación de servicio.</li>
         </ul>
       </section>
 
       <section class="doc-section">
-        <h2>3. Servicios en Línea y Disponibilidad</h2>
-        <p>Los servicios multijugador dependen de la disponibilidad operativa de nuestros servidores y de la infraestructura de Epic Online Services. No garantizamos un servicio ininterrumpido o libre de errores durante mantenimientos programados, actualizaciones de versiones o contingencias técnicas externas.</p>
-      </section>
-
-      <section class="doc-section">
         <h2>4. Propiedad Intelectual</h2>
-        <p>Todo el código fuente, arte 2D, animaciones, efectos visuales, diseño sonoro, interfaz de usuario y marcas asociadas son propiedad exclusiva de sus respectivos creadores independientes. Queda prohibida la redistribución, venta o explotación comercial no autorizada de los activos del Software.</p>
+        <p>Todos los derechos sobre el código fuente, arte 2D, animaciones, texturas, música, interfaz gráfica y elementos distintivos del juego son propiedad de su desarrollador. No se concede ningún derecho de propiedad intelectual sobre el juego, salvo la licencia de uso personal descrita.</p>
       </section>
 
       <section class="doc-section">
-        <h2>5. Exención y Limitación de Responsabilidad</h2>
-        <p>El Software se proporciona "tal cual" (AS IS). En la medida permitida por la legislación aplicable, el equipo desarrollador no será responsable por daños indirectos, incidentales o derivados del mal uso del Software o incompatibilidades con hardware no soportado.</p>
+        <h2>5. Disponibilidad del Servicio en Línea</h2>
+        <p>Los servicios multijugador se ofrecen según disponibilidad técnica. El desarrollador se reserva el derecho de suspender temporalmente el acceso a servidores para tareas de mantenimiento, aplicación de parches o mejoras del sistema sin previo aviso.</p>
+      </section>
+
+      <section class="doc-section">
+        <h2>6. Limitación de Responsabilidad y Ley Aplicable</h2>
+        <p>El juego se entrega "tal cual" (AS-IS), sin garantías de compatibilidad universal con cualquier hardware o software ajeno al soporte oficial especificado. Estos términos se rigen por las leyes de la <strong>República Argentina</strong>, sin perjuicio de las protecciones inderogables para el consumidor que correspondan en tu país de residencia.</p>
       </section>
     </article>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2026 Todos los derechos reservados. Proyecto independiente.</p>
+      <p>&copy; 2026 Todos los derechos reservados. F.R.R Entertainment.</p>
       <div class="footer-links">
         <a href="index.html">Página Principal</a>
-        <a href="index.html#download">Descargar</a>
       </div>
     </div>
   </footer>
 
-  <!-- Script para alternar pestañas -->
   <script>
     function switchTab(tab) {
       document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
