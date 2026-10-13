@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="legal-page-body">
+<body class="legal-page-body" data-page="privacy">
 
   <header class="navbar">
     <div class="container nav-content">
@@ -18,9 +18,10 @@
         <img src="Assets/Logo.jpg" alt="Logo" class="nav-avatar" />
         <span class="logo-text">WO:<span class="logo-text-desktop">DEFINITIVE EDITION</span></span>
       </a>
-      <nav class="nav-menu">
+      <nav class="nav-menu nav-menu-legal">
         <ul class="nav-links">
-          <li><a href="index.html" class="btn-play-nav">← VOLVER AL SITIO</a></li>
+          <li><button type="button" class="lang-toggle" data-lang-toggle aria-label="Cambiar idioma / Change language"><span class="lang-opt" data-lang="es">ES</span><span class="lang-sep">|</span><span class="lang-opt" data-lang="en">EN</span></button></li>
+          <li><a href="index.html" class="btn-play-nav" data-i18n="nav_back">← VOLVER AL SITIO</a></li>
         </ul>
       </nav>
     </div>
@@ -28,18 +29,19 @@
 
   <main class="container legal-wrapper">
     <div class="legal-header text-center">
-      <span class="legal-badge">CENTRO DE CUMPLIMIENTO Y TRANSPARENCIA</span>
-      <h1 class="legal-main-title">DOCUMENTACIÓN LEGAL</h1>
-      <p class="legal-subtext">Última actualización: 13 de octubre de 2026</p>
+      <span class="legal-badge" data-i18n="legal_badge">CENTRO DE CUMPLIMIENTO Y TRANSPARENCIA</span>
+      <h1 class="legal-main-title" data-i18n="legal_title">DOCUMENTACIÓN LEGAL</h1>
+      <p class="legal-subtext" data-i18n="legal_updated">Última actualización: 13 de octubre de 2026</p>
 
       <div class="legal-tabs">
-        <button class="tab-btn active" onclick="switchTab('privacy')">POLÍTICA DE PRIVACIDAD</button>
-        <button class="tab-btn" onclick="switchTab('terms')">TÉRMINOS Y CONDICIONES</button>
+        <button type="button" class="tab-btn active" data-tab-btn="privacy" data-i18n="tab_privacy">POLÍTICA DE PRIVACIDAD</button>
+        <button type="button" class="tab-btn" data-tab-btn="terms" data-i18n="tab_terms">TÉRMINOS Y CONDICIONES</button>
       </div>
     </div>
 
+    <div data-lang-block="es">
     <!-- PESTAÑA 1: POLÍTICA DE PRIVACIDAD -->
-    <article id="tab-privacy" class="legal-doc-box tab-content active">
+    <article class="legal-doc-box tab-content" data-tab="privacy">
       <div class="doc-meta-banner">
         <span>🔒 Cumplimiento normativo para Epic Online Services (EOS) y Easy Anti-Cheat (EAC)</span>
       </div>
@@ -127,7 +129,7 @@
     </article>
 
     <!-- PESTAÑA 2: TÉRMINOS Y CONDICIONES (EULA) -->
-    <article id="tab-terms" class="legal-doc-box tab-content">
+    <article class="legal-doc-box tab-content" data-tab="terms">
       <div class="doc-meta-banner banner-terms">
         <span>⚖️ Términos de Servicio y Contrato de Licencia de Usuario Final (EULA)</span>
       </div>
@@ -167,32 +169,169 @@
         <p>El juego se entrega "tal cual" (AS-IS), sin garantías de compatibilidad universal con cualquier hardware o software ajeno al soporte oficial especificado. Estos términos se rigen por las leyes de la <strong>República Argentina</strong>, sin perjuicio de las protecciones inderogables para el consumidor que correspondan en tu país de residencia.</p>
       </section>
     </article>
+    </div>
+
+    <div data-lang-block="en" hidden>
+    <!-- TAB 1: PRIVACY POLICY (EN) -->
+    <article class="legal-doc-box tab-content" data-tab="privacy">
+      <div class="doc-meta-banner">
+        <span>🔒 Compliance for Epic Online Services (EOS) and Easy Anti-Cheat (EAC)</span>
+      </div>
+
+      <section class="doc-section">
+        <h2>1. Data Controller</h2>
+        <p>The party responsible for the data collected in connection with the video game <strong>WO: Definitive Edition</strong> and its related services is <strong>NOMBRE</strong>, an independent developer based in the <strong>Argentine Republic</strong>.</p>
+        <p>For any official communication, to exercise your rights or for questions about this policy, you can write to: <strong>MAIL</strong>.</p>
+      </section>
+
+      <section class="doc-section">
+        <h2>2. Technical Data We Collect</h2>
+        <p>We do not collect sensitive personal information such as real names, identity documents, phone numbers or home addresses. We only process the technical and functional identifiers needed to run the multiplayer features:</p>
+        <ul class="doc-list">
+          <li><strong>Account and Platform Identifiers:</strong> Your Epic Product User ID (PUID) or Steam ID, used to sign you in, save your level and unlocked items, and link your game progress.</li>
+          <li><strong>Network and Connectivity Data:</strong> Public IP address and network latency (ping), processed temporarily to allow matchmaking and data exchange between game rooms.</li>
+          <li><strong>Chat Messages:</strong> Messages you write in room chat are sent to the other players so they can read them. We do not keep them after the match, unless someone reports them for bad behavior.</li>
+          <li><strong>Technical Error Logs:</strong> Crash reports and basic hardware specifications, used only to fix performance problems and crashes.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section">
+        <h2>3. Third-Party Services: Epic Games</h2>
+        <p>The game uses technology provided by <strong>Epic Games, Inc.</strong>:</p>
+        <div class="callout-box">
+          <h3>Epic Online Services (EOS)</h3>
+          <p>Used for user authentication, matchmaking and match statistics. Epic Games processes this data under its own <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank" rel="noopener">Privacy Policy</a>.</p>
+        </div>
+        <p>Epic Games, Inc. is based in the United States, so some data may be processed outside your country. We do not sell your data or share it with advertising networks.</p>
+        <div class="callout-box callout-security">
+          <h3>Easy Anti-Cheat (EAC)</h3>
+          <p>To prevent cheating, code injection and unauthorized memory changes, the game runs Easy Anti-Cheat during matches. EAC only checks the integrity of the game files and the memory used by the game process. It does not access private files or personal documents unrelated to the game.</p>
+        </div>
+      </section>
+
+      <section class="doc-section">
+        <h2>4. Data Retention</h2>
+        <ul class="doc-list">
+          <li><strong>Session and network data (IP, latency):</strong> Processed only during the match and not stored after you leave the server or room.</li>
+          <li><strong>Profile progress and statistics:</strong> Kept only while your account is active or until you ask us to delete them.</li>
+          <li><strong>Crash logs:</strong> Deleted within 90 days after the technical problem is fixed.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section">
+        <h2>5. Children's Privacy</h2>
+        <p><strong>WO: Definitive Edition</strong> is an artillery game with cartoon pets and mild cartoon violence (explosions and hits, no blood). Because it includes online matches and chat with other players, the recommended age is <strong>13 and up</strong>.</p>
+        <ul class="doc-list">
+          <li>The game is not directed at children under 13 (or the minimum age required by law in your country, for example 16 in some European countries).</li>
+          <li>Players under 18 must play with the permission of a parent or legal guardian.</li>
+          <li>We do not knowingly collect data from children under 13. If we find out that a child under that age has given us data, we delete it.</li>
+          <li>A parent or legal guardian can ask us to delete the data of a child in their care by writing to our email; we will do it within 1 month at most.</li>
+          <li>Epic Games accounts have their own parental controls, which we recommend turning on.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section">
+        <h2>6. Your Rights and Deletion Times</h2>
+        <p>You have the right to access, correct or permanently delete the progress data and identifiers linked to your account. To do so:</p>
+        <ul class="doc-list">
+          <li><strong>1.</strong> Write to our official email with your in-game username and what you want to do (see, correct or delete your data).</li>
+          <li><strong>2.</strong> We may ask you to confirm that the account is yours before making the change.</li>
+          <li><strong>3.</strong> Once the request is confirmed, <strong>we will delete your data within 1 month at most</strong> and let you know by email when it is done.</li>
+        </ul>
+        <p>Data stored by Epic Games in your Epic account is handled through Epic Games' own privacy tools.</p>
+        <p>If you believe we are not respecting your rights, in Argentina you can file a complaint with the <strong>Agencia de Acceso a la Información Pública (AAIP)</strong>, the authority in charge of Law 25.326 on Personal Data Protection.</p>
+      </section>
+
+      <section class="doc-section">
+        <h2>7. Changes to this Policy</h2>
+        <p>If we change this policy, we will publish the new version on this page with its update date. If the change is important, we will also announce it in the game.</p>
+      </section>
+
+      <section class="doc-section contact-card">
+        <h2>Official Contact</h2>
+        <p>For data deletion requests or legal questions, write directly to our official email:</p>
+        <div class="email-badge">MAIL</div>
+      </section>
+    </article>
+
+    <!-- TAB 2: TERMS AND CONDITIONS / EULA (EN) -->
+    <article class="legal-doc-box tab-content" data-tab="terms">
+      <div class="doc-meta-banner banner-terms">
+        <span>⚖️ Terms of Service and End User License Agreement (EULA)</span>
+      </div>
+
+      <section class="doc-section">
+        <h2>1. Acceptance of the Terms</h2>
+        <p>By downloading, installing or playing <strong>WO: Definitive Edition</strong>, you agree to be bound by these Terms of Service. If you do not agree with any of them, do not install or use the software.</p>
+      </section>
+
+      <section class="doc-section">
+        <h2>2. Limited License</h2>
+        <p>You are granted a revocable, non-exclusive, non-transferable and non-sublicensable license to download and run the game only for personal, non-commercial entertainment on supported devices.</p>
+      </section>
+
+      <section class="doc-section">
+        <h2>3. Code of Conduct and Fair Play (Anti-Cheat)</h2>
+        <p>To protect the community and fair competition, the following is strictly forbidden:</p>
+        <ul class="doc-list">
+          <li><strong>Cheats and Tampering:</strong> Using cheats, bots, aimbots, memory injection tools, or modifying the game's data packets or binary files.</li>
+          <li><strong>Bypassing Security:</strong> Trying to disable, block, bypass or reverse engineer <strong>Easy Anti-Cheat</strong> or <strong>Epic Online Services</strong>. Deliberate attempts will result in permanent suspension from the online servers.</li>
+          <li><strong>Malicious Behavior:</strong> Deliberately abusing game bugs (exploits) or attacking the network infrastructure through flooding or denial of service.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section">
+        <h2>4. Intellectual Property</h2>
+        <p>All rights to the source code, 2D art, animations, textures, music, user interface and distinctive elements of the game belong to its developer. No intellectual property rights are granted, except the personal-use license described above.</p>
+      </section>
+
+      <section class="doc-section">
+        <h2>5. Online Service Availability</h2>
+        <p>Multiplayer services are offered subject to technical availability. The developer may temporarily suspend server access for maintenance, patches or improvements without prior notice.</p>
+      </section>
+
+      <section class="doc-section">
+        <h2>6. Limitation of Liability and Governing Law</h2>
+        <p>The game is provided "as is", with no guarantee of compatibility with every hardware or software outside the officially supported specifications. These terms are governed by the laws of the <strong>Argentine Republic</strong>, without prejudice to the mandatory consumer protections that apply in your country of residence.</p>
+      </section>
+    </article>
+    </div>
   </main>
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2026 Todos los derechos reservados. F.R.R Entertainment.</p>
+      <p data-i18n="footer_rights">&copy; 2026 Todos los derechos reservados. F.R.R Entertainment.</p>
       <div class="footer-links">
-        <a href="index.html">Página Principal</a>
+        <a href="index.html" data-i18n="link_home">Página Principal</a>
       </div>
     </div>
   </footer>
 
+  <script src="Js/i18n.js"></script>
   <script>
-    if (location.hash === '#terms') { window.addEventListener('DOMContentLoaded', () => switchTab('terms')); }
+    // Pestañas Privacidad / Términos (también se abre en Términos con privacy.html#terms)
     function switchTab(tab) {
-      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-
-      if (tab === 'privacy') {
-        document.querySelector('.tab-btn:nth-child(1)').classList.add('active');
-        document.getElementById('tab-privacy').classList.add('active');
-      } else {
-        document.querySelector('.tab-btn:nth-child(2)').classList.add('active');
-        document.getElementById('tab-terms').classList.add('active');
-      }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.querySelectorAll('[data-tab-btn]').forEach(function (b) {
+        b.classList.toggle('active', b.getAttribute('data-tab-btn') === tab);
+      });
+      document.querySelectorAll('.tab-content').forEach(function (c) {
+        c.classList.toggle('active', c.getAttribute('data-tab') === tab);
+      });
     }
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('[data-tab-btn]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var tab = b.getAttribute('data-tab-btn');
+          switchTab(tab);
+          try { history.replaceState(null, '', tab === 'terms' ? '#terms' : '#privacy'); } catch (e) {}
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+      switchTab(location.hash === '#terms' ? 'terms' : 'privacy');
+    });
+    window.addEventListener('hashchange', function () {
+      switchTab(location.hash === '#terms' ? 'terms' : 'privacy');
+    });
   </script>
 </body>
 </html>

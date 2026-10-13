@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WO: Definitive Edition, juego de artillería por turnos con mascotas. Desarrollado por F.R.R Entertainment." />
   <link rel="icon" type="image/jpeg" href="Assets/Logo.jpg" />
   <title>WO Definitive Edition</title>
   <link rel="stylesheet" href="Css/style.css" />
@@ -12,7 +13,7 @@
 </head>
 <body>
 
-<!-- Barra de navegación con Menú Hamburguesa en móvil -->
+  <!-- Barra de navegación con Menú Hamburguesa en móvil -->
   <header class="navbar">
     <div class="container nav-content">
       <a href="index.html" class="logo-brand">
@@ -21,7 +22,7 @@
       </a>
 
       <!-- Botón de apertura para móviles -->
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-aria="nav_open">
         <span></span>
         <span></span>
         <span></span>
@@ -30,11 +31,13 @@
       <!-- Menú de enlaces -->
       <nav class="nav-menu" id="navMenu">
         <ul class="nav-links">
-          <li><a href="#features">Características</a></li>
-          <li><a href="#preview">Vista Previa</a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="privacy.html">Privacidad</a></li>
-          <li><a href="#download" class="btn-play-nav">JUGAR</a></li>
+          <li><a href="#features" data-i18n="nav_features">Características</a></li>
+          <li><a href="#preview" data-i18n="nav_preview">Vista Previa</a></li>
+          <li><a href="#requirements" data-i18n="nav_requirements">Requisitos</a></li>
+          <li><a href="#about" data-i18n="nav_about">Nosotros</a></li>
+          <li><a href="privacy.html" data-i18n="nav_privacy">Privacidad</a></li>
+          <li><button type="button" class="lang-toggle" data-lang-toggle aria-label="Cambiar idioma / Change language"><span class="lang-opt" data-lang="es">ES</span><span class="lang-sep">|</span><span class="lang-opt" data-lang="en">EN</span></button></li>
+          <li><a href="#download" class="btn-play-nav" data-i18n="nav_platforms">PLATAFORMAS</a></li>
         </ul>
       </nav>
     </div>
@@ -44,47 +47,47 @@
   <section class="hero-section">
     <div class="container hero-container">
       <div class="banner-frame">
-        <img src="Assets/Banner.png" alt="Banner Oficial" class="img-banner-main" />
+        <img src="Assets/Banner.png" alt="WO: Definitive Edition" class="img-banner-main" />
       </div>
 
       <div class="hero-status-pill">
-        <span class="pulse-dot"></span> MULTIJUGADOR ONLINE • EPIC ONLINE SERVICES • EASY ANTI-CHEAT
+        <span class="pulse-dot"></span> <span data-i18n="hero_pill">MULTIJUGADOR ONLINE • EPIC ONLINE SERVICES • EASY ANTI-CHEAT</span>
       </div>
 
-      <h1 class="hero-heading">COMBATE POR TURNOS, FÍSICAS Y CAOS TOTAL</h1>
-      <p class="hero-subtext">
+      <h1 class="hero-heading" data-i18n="hero_title">COMBATE POR TURNOS, FÍSICAS Y CAOS TOTAL</h1>
+      <p class="hero-subtext" data-i18n="hero_text">
         Elige tu mascota, personalízala y compite con armas locas en partidas online de hasta 6 jugadores.
       </p>
 
       <div class="hero-actions">
-        <a href="#download" class="btn-ui btn-yellow">DESCARGAR</a>
+        <a href="#download" class="btn-ui btn-yellow" data-i18n="hero_button">VER PLATAFORMAS</a>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Modos & Características (Basado en tu menú) -->
+  <!-- Características -->
   <section id="features" class="section">
     <div class="container">
-      <h2 class="section-title">TODO LISTO PARA EL COMBATE</h2>
-      <p class="section-subtitle">Diseñado desde cero para partidas rápidas, justas y competitivas.</p>
+      <h2 class="section-title" data-i18n="features_title">TODO LISTO PARA EL COMBATE</h2>
+      <p class="section-subtitle" data-i18n="features_sub">Diseñado desde cero para partidas rápidas, justas y competitivas.</p>
 
       <div class="game-cards-grid">
         <div class="game-card">
           <div class="card-icon-box">🎯</div>
-          <h3>Partidas Online 1 a 6 Jugadores</h3>
-          <p>Crea salas privadas con tus amigos o busca partida globalmente con el sistema de matchmaking integrado.</p>
+          <h3 data-i18n="card1_title">Partidas Online 1 a 6 Jugadores</h3>
+          <p data-i18n="card1_text">Crea salas privadas con tus amigos o busca partida globalmente con el sistema de matchmaking integrado.</p>
         </div>
 
         <div class="game-card">
           <div class="card-icon-box">🐶</div>
-          <h3>Tus Mascotas y Personalización</h3>
-          <p>Equipa tus mascotas con accesorios, desbloquea nuevas clases y personaliza su estilo para cada combate.</p>
+          <h3 data-i18n="card2_title">Tus Mascotas y Personalización</h3>
+          <p data-i18n="card2_text">Elige entre 8 mascotas, cambia sus colores y equípalas con sombreros, banderas y mini mascotas.</p>
         </div>
 
         <div class="game-card">
           <div class="card-icon-box">🏹</div>
-          <h3>Modo Práctica</h3>
-          <p>Calibra tus ángulos, calcula la potencia de tiro y prueba las armas del arsenal sin presión de tiempo.</p>
+          <h3 data-i18n="card3_title">Modo Práctica</h3>
+          <p data-i18n="card3_text">Calibra tus ángulos, calcula la potencia de tiro y prueba las armas del arsenal sin presión de tiempo.</p>
         </div>
       </div>
     </div>
@@ -93,76 +96,106 @@
   <!-- Vista Previa del Menú del Juego -->
   <section id="preview" class="section section-lobby">
     <div class="container text-center">
-      <h2 class="section-title">LOBBY & SALAS MULTIJUGADOR</h2>  
+      <h2 class="section-title" data-i18n="preview_title">LOBBY & SALAS MULTIJUGADOR</h2>
       <div class="screenshot-wrapper">
-        <img src="Assets/Menu.png" alt="Menú Principal del Juego" class="screenshot-img" />
+        <img src="Assets/Menu.png" alt="Menú principal del juego" class="screenshot-img" data-i18n-alt="preview_alt" />
       </div>
     </div>
   </section>
 
- <!-- Sección Multiplataforma de Descargas -->
+  <!-- Plataformas -->
   <section id="download" class="section section-download">
     <div class="container text-center">
-      <h2 class="section-title">ELIGE TU PLATAFORMA</h2>
-      <p class="section-subtitle">El juego todavía no está publicado. Primero llegará a PC.</p>
+      <h2 class="section-title" data-i18n="platforms_title">ELIGE TU PLATAFORMA</h2>
+      <p class="section-subtitle" data-i18n="platforms_sub">El juego todavía no está publicado. Primero llegará a PC.</p>
 
       <div class="platforms-grid single">
 
         <!-- 1. Epic Games Store -->
         <div class="platform-card">
-          <div class="platform-badge badge-soon">PRÓXIMAMENTE</div>
+          <div class="platform-badge badge-soon" data-i18n="soon">PRÓXIMAMENTE</div>
           <div class="platform-icon">⚡</div>
           <h3>EPIC GAMES STORE</h3>
           <p class="platform-meta">PC (Windows)</p>
-          <button class="btn-ui btn-disabled btn-block" disabled>PRÓXIMAMENTE</button>
+          <button class="btn-ui btn-disabled btn-block" disabled data-i18n="soon">PRÓXIMAMENTE</button>
         </div>
 
         <!-- Plataformas para mas adelante (sacar el comentario cuando sea real):
 
         <div class="platform-card">
-          <div class="platform-badge badge-store">STORE</div>
+          <div class="platform-badge badge-soon" data-i18n="soon">PRÓXIMAMENTE</div>
           <div class="platform-icon">🎮</div>
           <h3>STEAM</h3>
-          <p class="platform-meta">PC</p>
-          <a href="#" class="btn-ui btn-blue btn-block">MUY PRONTO</a>
+          <p class="platform-meta">PC (Windows)</p>
+          <button class="btn-ui btn-disabled btn-block" disabled data-i18n="soon">PRÓXIMAMENTE</button>
         </div>
 
-         3. Android / Mobile 
         <div class="platform-card coming-soon">
-          <div class="platform-badge badge-soon">PRÓXIMAMENTE</div>
+          <div class="platform-badge badge-soon" data-i18n="soon">PRÓXIMAMENTE</div>
           <div class="platform-icon">📱</div>
           <h3>ANDROID / MOBILE</h3>
           <p class="platform-meta">Google Play Store</p>
-          <button class="btn-ui btn-disabled btn-block" disabled>MUY PRONTO</button>
+          <button class="btn-ui btn-disabled btn-block" disabled data-i18n="soon">PRÓXIMAMENTE</button>
         </div>
 
-         4. macOS 
         <div class="platform-card coming-soon">
-          <div class="platform-badge badge-soon">PRÓXIMAMENTE</div>
+          <div class="platform-badge badge-soon" data-i18n="soon">PRÓXIMAMENTE</div>
           <div class="platform-icon">🍎</div>
           <h3>MACOS</h3>
           <p class="platform-meta">Apple</p>
-          <button class="btn-ui btn-disabled btn-block" disabled>MUY PRONTO</button>
+          <button class="btn-ui btn-disabled btn-block" disabled data-i18n="soon">PRÓXIMAMENTE</button>
         </div>
 
-         5. PlayStation 5 (Nuevo) 
         <div class="platform-card coming-soon">
-          <div class="platform-badge badge-soon">PRÓXIMAMENTE</div>
+          <div class="platform-badge badge-soon" data-i18n="soon">PRÓXIMAMENTE</div>
           <div class="platform-icon">🕹️</div>
           <h3>PLAYSTATION 5</h3>
           <p class="platform-meta">PlayStation Store</p>
-          <button class="btn-ui btn-disabled btn-block" disabled>MUY PRONTO</button>
+          <button class="btn-ui btn-disabled btn-block" disabled data-i18n="soon">PRÓXIMAMENTE</button>
         </div>
 
-         6. Xbox Series X|S (Nuevo) 
         <div class="platform-card coming-soon">
-          <div class="platform-badge badge-soon">PRÓXIMAMENTE</div>
+          <div class="platform-badge badge-soon" data-i18n="soon">PRÓXIMAMENTE</div>
           <div class="platform-icon">🟢</div>
           <h3>XBOX SERIES X|S</h3>
           <p class="platform-meta">Microsoft Xbox Store</p>
-          <button class="btn-ui btn-disabled btn-block" disabled>MUY PRONTO</button>
+          <button class="btn-ui btn-disabled btn-block" disabled data-i18n="soon">PRÓXIMAMENTE</button>
         </div>
         -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Requisitos del sistema -->
+  <section id="requirements" class="section">
+    <div class="container text-center">
+      <h2 class="section-title" data-i18n="req_title">REQUISITOS DEL SISTEMA</h2>
+      <p class="section-subtitle" data-i18n="req_sub">PC con Windows. Se necesita conexión a internet para jugar online.</p>
+
+      <div class="req-grid">
+        <div class="req-card">
+          <h3 data-i18n="req_min">MÍNIMOS</h3>
+          <dl class="req-list">
+            <dt data-i18n="req_os">Sistema operativo</dt><dd>Windows 10 (64 bits)</dd>
+            <dt data-i18n="req_cpu">Procesador</dt><dd data-i18n="req_cpu_min">Doble núcleo de 2,0 GHz</dd>
+            <dt data-i18n="req_ram">Memoria</dt><dd>4 GB RAM</dd>
+            <dt data-i18n="req_gpu">Gráficos</dt><dd data-i18n="req_gpu_min">Compatible con OpenGL 3.3, 512 MB de video</dd>
+            <dt data-i18n="req_disk">Almacenamiento</dt><dd data-i18n="req_disk_val">500 MB de espacio libre</dd>
+            <dt data-i18n="req_net">Red</dt><dd data-i18n="req_net_val">Conexión a internet de banda ancha</dd>
+          </dl>
+        </div>
+
+        <div class="req-card">
+          <h3 data-i18n="req_rec">RECOMENDADOS</h3>
+          <dl class="req-list">
+            <dt data-i18n="req_os">Sistema operativo</dt><dd>Windows 10 / 11 (64 bits)</dd>
+            <dt data-i18n="req_cpu">Procesador</dt><dd data-i18n="req_cpu_rec">Cuatro núcleos de 2,5 GHz o más</dd>
+            <dt data-i18n="req_ram">Memoria</dt><dd>8 GB RAM</dd>
+            <dt data-i18n="req_gpu">Gráficos</dt><dd data-i18n="req_gpu_rec">Compatible con OpenGL 3.3, 1 GB de video</dd>
+            <dt data-i18n="req_disk">Almacenamiento</dt><dd data-i18n="req_disk_val">500 MB de espacio libre</dd>
+            <dt data-i18n="req_net">Red</dt><dd data-i18n="req_net_val">Conexión a internet de banda ancha</dd>
+          </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -170,25 +203,26 @@
   <!-- Quienes somos -->
   <section id="about" class="section">
     <div class="container text-center">
-      <h2 class="section-title">SOBRE EL JUEGO</h2>
-      <p class="section-subtitle">WO: Definitive Edition es un juego de artillería por turnos con mascotas, desarrollado por <strong>F.R.R Entertainment</strong>, un estudio independiente de Argentina.</p>
-      <p class="section-subtitle">Edad recomendada: mayores de 13 años (violencia caricaturesca leve y chat online).</p>
-      <p class="section-subtitle about-links"><a href="privacy.html">Política de Privacidad</a> · <a href="privacy.html#terms">Términos y Condiciones</a></p>
+      <h2 class="section-title" data-i18n="about_title">SOBRE EL JUEGO</h2>
+      <p class="section-subtitle" data-i18n="about_text">WO: Definitive Edition es un juego de artillería por turnos con mascotas, desarrollado por <strong>F.R.R Entertainment</strong>, un estudio independiente de Argentina.</p>
+      <p class="section-subtitle" data-i18n="about_age">Edad recomendada: mayores de 13 años (violencia caricaturesca leve y chat online).</p>
+      <p class="section-subtitle about-links"><a href="privacy.html" data-i18n="link_privacy">Política de Privacidad</a> · <a href="privacy.html#terms" data-i18n="link_terms">Términos y Condiciones</a></p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2026 Todos los derechos reservados. F.R.R Entertainment.</p>
+      <p data-i18n="footer_rights">&copy; 2026 Todos los derechos reservados. F.R.R Entertainment.</p>
       <div class="footer-links">
-        <a href="privacy.html">Política de Privacidad</a>
-        <a href="privacy.html#terms">Términos y Condiciones</a>
-        <a href="#about">Nosotros</a>
+        <a href="privacy.html" data-i18n="link_privacy">Política de Privacidad</a>
+        <a href="privacy.html#terms" data-i18n="link_terms">Términos y Condiciones</a>
+        <a href="#about" data-i18n="nav_about">Nosotros</a>
       </div>
     </div>
   </footer>
 
+  <script src="Js/i18n.js"></script>
   <script src="Js/main.js"></script>
 </body>
 </html>

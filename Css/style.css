@@ -939,3 +939,84 @@ body {
   grid-template-columns: minmax(0, 340px);
   justify-content: center;
 }
+
+/* Selector de idioma ES | EN */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: 2px solid var(--ui-card-border);
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-family: var(--font-text);
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+.lang-toggle:hover { border-color: var(--grid-cyan); }
+.lang-toggle:focus-visible { outline: 2px solid var(--grid-cyan); outline-offset: 2px; }
+.lang-opt { padding: 1px 3px; border-radius: 3px; }
+.lang-opt.active { color: #031338; background: var(--grid-cyan); }
+.lang-sep { opacity: 0.5; }
+
+/* Requisitos del sistema */
+.req-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: left;
+}
+.req-card {
+  background: var(--ui-card-bg);
+  border: 2px solid var(--ui-card-border);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.req-card h3 {
+  font-family: var(--font-arcade);
+  color: var(--ui-yellow);
+  margin: 0 0 14px;
+  font-size: 1.1rem;
+}
+.req-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 14px;
+  margin: 0;
+}
+.req-list dt { color: var(--grid-cyan); font-weight: 700; font-size: 0.9rem; }
+.req-list dd { margin: 0; color: #fff; font-size: 0.9rem; }
+@media (max-width: 640px) {
+  .req-grid { grid-template-columns: 1fr; }
+  .req-list { grid-template-columns: 1fr; gap: 2px; }
+  .req-list dd { margin-bottom: 8px; }
+}
+[hidden] { display: none !important; }
+
+@media (max-width: 820px) {
+  /* El menú del celular ahora tiene más opciones (idioma y requisitos) */
+  .nav-menu.active { max-height: 520px; }
+  /* En la página legal no hay hamburguesa: el idioma y "volver" quedan siempre a la vista */
+  .nav-menu.nav-menu-legal {
+    position: static;
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    background: transparent;
+    border: 0;
+  }
+  .nav-menu-legal .nav-links {
+    flex-direction: row;
+    padding: 0;
+    gap: 8px;
+    width: auto;
+  }
+  .nav-menu-legal .nav-links li { width: auto; }
+  .nav-menu-legal .btn-play-nav { font-size: 0.7rem !important; padding: 5px 8px; }
+  .legal-page-body .logo-text-desktop { display: none; }
+}
