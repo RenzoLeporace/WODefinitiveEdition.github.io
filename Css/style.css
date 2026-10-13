@@ -928,3 +928,14 @@ body {
     font-size: 0.85rem;
   }
 }
+/* Seccion "Sobre el juego" y una sola plataforma centrada */
+.about-links a {
+  color: var(--grid-cyan);
+  font-weight: 700;
+  text-decoration: none;
+}
+.about-links a:hover { text-decoration: underline; }
+.platforms-grid.single {
+  grid-template-columns: minmax(0, 340px);
+  justify-content: center;
+}
