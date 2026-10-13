@@ -97,9 +97,21 @@
   <section id="preview" class="section section-lobby">
     <div class="container text-center">
       <h2 class="section-title" data-i18n="preview_title">LOBBY & SALAS MULTIJUGADOR</h2>
-      <div class="screenshot-wrapper">
-        <img src="Assets/Menu.png" alt="Menú principal del juego" class="screenshot-img" data-i18n-alt="preview_alt" />
+      <div class="screenshots-grid">
+        <button type="button" class="screenshot-wrapper screenshot-button">
+          <img src="Assets/Menu.png" alt="Menú principal del juego" class="screenshot-img" data-i18n-alt="preview_alt_menu" />
+        </button>
+        <button type="button" class="screenshot-wrapper screenshot-button">
+          <img src="Assets/jugando.png" alt="Partida en curso" class="screenshot-img" data-i18n-alt="preview_alt_gameplay" />
+        </button>
+        <button type="button" class="screenshot-wrapper screenshot-button">
+          <img src="Assets/Maparoto.png" alt="Mapa de juego" class="screenshot-img" data-i18n-alt="preview_alt_map" />
+        </button>
       </div>
+      <dialog class="screenshot-dialog" aria-label="Imagen ampliada" data-i18n-aria="preview_dialog">
+        <button type="button" class="screenshot-dialog-close" aria-label="Cerrar imagen" data-i18n-aria="preview_close">&times;</button>
+        <img class="screenshot-dialog-img" alt="" />
+      </dialog>
     </div>
   </section>
 

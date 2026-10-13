@@ -27,3 +27,31 @@ if (navToggle && navMenu) {
     });
   });
 }
+
+const screenshotDialog = document.querySelector('.screenshot-dialog');
+const screenshotDialogImage = document.querySelector('.screenshot-dialog-img');
+
+if (screenshotDialog instanceof HTMLDialogElement && screenshotDialogImage instanceof HTMLImageElement) {
+  document.querySelectorAll('.screenshot-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const image = button.querySelector('img');
+      if (!image) return;
+
+      screenshotDialogImage.src = image.src;
+      screenshotDialogImage.alt = image.alt;
+      screenshotDialog.showModal();
+    });
+  });
+
+  screenshotDialog.querySelector('.screenshot-dialog-close')?.addEventListener('click', () => {
+    screenshotDialog.close();
+  });
+
+  screenshotDialog.addEventListener('click', event => {
+    if (event.target === screenshotDialog) screenshotDialog.close();
+  });
+
+  screenshotDialog.addEventListener('cancel', () => {
+    screenshotDialog.close();
+  });
+}
